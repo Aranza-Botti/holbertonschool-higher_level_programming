@@ -1,35 +1,11 @@
 #!/usr/bin/python3
 
-def delete_at(my_list=[], idx=0):
+def square_matrix_simple(matrix=[]):
     
-    """
-
-    deletes an elment from a list at index idx
-
-    Args:
-
-        my_list - list to search
-
-        idx - the position to access
-
-    Return:
-
-        my_list - if idx is out of range
-
-    """
+    new_matrix = matrix.copy()
     
-    if -1 < idx < len(my_list):
+    for i in range(len(matrix)):
         
-        del my_list[idx]
+        new_matrix[i] = list(map(lambda x: x**2, matrix[i]))
         
-    return my_list
-
-if __name__ == '__main__':
-    
-    lst = list(range(1, 6))
-    
-    tmp = delete_at(lst, 3)
-    
-    print(lst)
-    
-    print(tmp)
+    return (new_matrix)
