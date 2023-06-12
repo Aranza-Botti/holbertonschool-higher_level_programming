@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 
 def delete_at(my_list=[], idx=0):
-    
     """
     deletes an elment from a list at index idx
     Args:
@@ -9,9 +8,10 @@ def delete_at(my_list=[], idx=0):
         idx - the position to access
     Return:
         my_list - if idx is out of range
+
     """
     if -1 < idx < len(my_list):
-        del my_list[idx]        
+        del my_list[idx]
     return my_list
 
 
